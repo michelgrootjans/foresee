@@ -1,0 +1,183 @@
+body
+{
+	margin: 0px;
+	color: midnightblue;
+	font-family: arial;
+	font-size: 15pt;
+	background-color: lightgoldenrodyellow;
+	text-align: justify;
+}
+
+div.main
+{
+	font-size: 120%;
+	color: darkorchid;
+	font-family: Garamond;
+	display : block ;	
+	height : 20em ;
+	margin-right : 1em ;
+	margin-left : 1em ;
+}
+
+div.mainFull
+{
+	color: darkorchid;
+	font-family: Garamond;
+	display : block ;	
+	margin-right : 1em ;
+	margin-left : 1em ;
+}
+
+h1.center
+{
+	margin-top: 0em;
+	margin-bottom: 1em;
+	font-weight: bold;
+	position: static;
+	text-align: center;
+	color: midnightblue;
+}
+
+div.signature
+{
+	display: block;
+	text-align: right;
+}
+
+div.definition
+{
+	border-right: red thin solid;
+	padding-right: 1em;
+	border-top: red thin solid;
+	display: block;
+	padding-left: 1em;
+	padding-bottom: 0.5em;
+	border-left: red thin solid;
+	color: red;
+	padding-top: 0.5em;
+	border-bottom: red thin solid;
+	margin : 0.5em ;
+}
+
+div.emphasis
+{
+	display: inline;
+	color: red;
+}
+
+div.footer
+{
+	font-size: 40%;
+	border-top: #ffee66 thin solid;
+	background-color: lightgoldenrodyellow;
+}
+
+a.logo:link
+{
+	font-size: 200%;
+	text-transform: uppercase;
+	background-color : lightgoldenrodyellow ;
+	color: black;
+	font-style: italic;
+	font-family: Impact, Sans-Serif;
+	text-decoration: none ;
+}
+
+a.logo:visited
+{
+	font-size: 200%;
+	text-transform: uppercase;
+	background-color : lightgoldenrodyellow ;
+	color: black;
+	font-style: italic;
+	font-family: Impact, Sans-Serif;
+	text-decoration: none ;
+}
+
+a.logo:hover
+{
+	font-size: 200%;
+	text-transform: uppercase;
+	background-color : lightgoldenrodyellow ;
+	color: black;
+	font-style: italic;
+	font-family: Impact, Sans-Serif;
+	text-decoration: none ;
+}
+
+a.slidelink:link
+{
+	padding-left : 1em ;
+	padding-right : 1em ;
+	text-transform: uppercase;
+	background-color : lightgoldenrodyellow ;
+	color: midnightblue;
+	font-family: Impact, Sans-Serif;
+	text-decoration: none ;
+}
+
+a.slidelink:visited
+{
+	padding-left : 1em ;
+	padding-right : 1em ;
+	text-transform: uppercase;
+	background-color : lightgoldenrodyellow ;
+	color: midnightblue;
+	font-family: Impact, Sans-Serif;
+	text-decoration: none ;
+}
+
+a.slidelink:hover
+{
+	padding-left : 1em ;
+	padding-right : 1em ;
+	text-transform: uppercase;
+	background-color : lightgoldenrodyellow ;
+	color: red;
+	font-family: Impact, Sans-Serif;
+	text-decoration: none ;
+}
+
+table.timer
+{
+	border-right: darkorchid thin solid;
+	border-top: darkorchid thin solid;
+	border-left: darkorchid thin solid;
+	border-bottom: darkorchid thin solid;
+}
+
+table.timer tr
+{
+	/*background-color: blue;*/
+}
+
+table.timer tr td.filled
+{
+	background-color: blue;
+}
+
+table.timer tr td.done
+{
+	background-color: red;
+}
+
+table.timer tr td.empty
+{
+}
+
+ul 
+{
+	margin-top : 0em ;
+	margin-bottom : 0.5em ;
+}
+
+table th
+{
+	background-color: #ffff33;
+	text-align: center;
+}
+
+table.score input 
+{
+	color: darkorchid;
+}

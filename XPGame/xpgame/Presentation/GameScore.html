@@ -1,0 +1,128 @@
+
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<HTML lang="en">
+
+<!-- XP Game site maintained by Tryx and Nayima -->
+<HEAD>
+
+<SCRIPT LANGUAGE="JavaScript" type="text/javascript">
+<!-- Begin
+function compute() {
+
+	document.score.business1_total.value = eval(document.score.business1_1.value) + eval(document.score.business1_2.value) + eval(document.score.business1_3.value) ;
+	document.score.business2_total.value = eval(document.score.business2_1.value) + eval(document.score.business2_2.value) + eval(document.score.business2_3.value) ;
+	document.score.business3_total.value = eval(document.score.business3_1.value) + eval(document.score.business3_2.value) + eval(document.score.business3_3.value) ;
+	document.score.business4_total.value = eval(document.score.business4_1.value) + eval(document.score.business4_2.value) + eval(document.score.business4_3.value) ;
+	document.score.business5_total.value = eval(document.score.business5_1.value) + eval(document.score.business5_2.value) + eval(document.score.business5_3.value) ;
+
+	document.score.total_value.value = eval(document.score.business1_total.value) + eval(document.score.business2_total.value) + eval(document.score.business3_total.value) + eval(document.score.business4_total.value) + eval(document.score.business5_total.value);
+
+}
+
+//  End -->
+</SCRIPT>
+<BASE >
+<META HTTP-EQUIV="Content-Type" content="text/html; charset=iso-8859-1">
+<META name="Author" content="Vera Peeters, Pascal Van Cauwenberghe, Martine Verluyten">
+<META name="Keywords" content="belgium,xp,planning game,velocity,extreme programming,agile,xp game">
+<META name="Description" content="XP Game presentation">
+<LINK REL="stylesheet" HREF="style.css" TYPE="text/css">
+<TITLE>XP Game Score</TITLE>
+</HEAD>
+<BODY>
+<div class="mainFull" name="main">
+<h1 class="center">XP Game Score</h1>
+<form name="score">
+<table border="1" class="score">
+<tr><th rowspan="2">Team</th><th colspan="2">Iteration1</th><th colspan="2">Iteration2</th><th colspan="2">Iteration3</th><th colspan="2">Final</th></tr>
+<tr><th>Velocity</th><th>Value</th><th>Velocity</th><th>Value</th><th>Velocity</th><th>Value</th><th>Velocity</th><th>Value</th></tr>
+<tr>
+	<td><input type="text" maxlength="30" size="15" name="team1"></td>
+	<td><input type="text" maxlength="5" size="5" name="velocity1_1" value="0" ID="Text1"></td>
+	<td><input type="text" maxlength="5" size="5" name="business1_1" value="0" ID="Text2"></td>
+	<td><input type="text" maxlength="5" size="5" name="velocity1_2" value="0" ID="Text3"></td>
+	<td><input type="text" maxlength="5" size="5" name="business1_2" value="0" ID="Text4"></td>
+	<td><input type="text" maxlength="5" size="5" name="velocity1_3" value="0" ID="Text5"></td>
+	<td><input type="text" maxlength="5" size="5" name="business1_3" value="0" ID="Text6"></td>
+	<td><input type="text" maxlength="5" size="5" name="velocity1_4" value="0" ID="Text43"></td>
+	<td><input disabled type="text" maxlength="5" size="5" name="business1_total" value="0" ID="Text38"></td>
+</tr>
+<tr>
+	<td><input type="text" maxlength="30" size="15" name="team2" ID="Text7"></td>
+	<td><input type="text" maxlength="5" size="5" name="velocity2_1" value="0" ID="Text8"></td>
+	<td><input type="text" maxlength="5" size="5" name="business2_1" value="0" ID="Text9"></td>
+	<td><input type="text" maxlength="5" size="5" name="velocity2_2" value="0" ID="Text10"></td>
+	<td><input type="text" maxlength="5" size="5" name="business2_2" value="0" ID="Text11"></td>
+	<td><input type="text" maxlength="5" size="5" name="velocity2_3" value="0" ID="Text12"></td>
+	<td><input type="text" maxlength="5" size="5" name="business2_3" value="0" ID="Text13"></td>
+	<td><input type="text" maxlength="5" size="5" name="velocity2_4" value="0" ID="Text44"></td>
+	<td><input disabled type="text" maxlength="5" size="5" name="business2_total" value="0" ID="Text39"></td>
+</tr>
+<tr>
+	<td><input type="text" maxlength="30" size="15" name="team3" ID="Text14"></td>
+	<td><input type="text" maxlength="5" size="5" name="velocity3_1" value="0" ID="Text15"></td>
+	<td><input type="text" maxlength="5" size="5" name="business3_1" value="0" ID="Text16"></td>
+	<td><input type="text" maxlength="5" size="5" name="velocity3_2" value="0" ID="Text17"></td>
+	<td><input type="text" maxlength="5" size="5" name="business3_2" value="0" ID="Text18"></td>
+	<td><input type="text" maxlength="5" size="5" name="velocity3_3" value="0" ID="Text19"></td>
+	<td><input type="text" maxlength="5" size="5" name="business3_3" value="0" ID="Text20"></td>
+	<td><input type="text" maxlength="5" size="5" name="velocity3_4" value="0" ID="Text45"></td>
+	<td><input disabled type="text" maxlength="5" size="5" name="business3_total" value="0" ID="Text40"></td>
+</tr>
+<tr>
+	<td><input type="text" maxlength="30" size="15" name="team4" ID="Text21"></td>
+	<td><input type="text" maxlength="5" size="5" name="velocity4_1" value="0" ID="Text22"></td>
+	<td><input type="text" maxlength="5" size="5" name="business4_1" value="0" ID="Text23"></td>
+	<td><input type="text" maxlength="5" size="5" name="velocity4_2" value="0" ID="Text24"></td>
+	<td><input type="text" maxlength="5" size="5" name="business4_2" value="0" ID="Text25"></td>
+	<td><input type="text" maxlength="5" size="5" name="velocity4_3" value="0" ID="Text26"></td>
+	<td><input type="text" maxlength="5" size="5" name="business4_3" value="0" ID="Text27"></td>
+	<td><input type="text" maxlength="5" size="5" name="velocity4_4" value="0" ID="Text46"></td>
+	<td><input disabled type="text" maxlength="5" size="5" name="business4_total" value="0" ID="Text41"></td>
+</tr>
+<tr>
+	<td><input type="text" maxlength="30" size="15" name="team5" ID="Text28"></td>
+	<td><input type="text" maxlength="5" size="5" name="velocity5_1" value="0" ID="Text30"></td>
+	<td><input type="text" maxlength="5" size="5" name="business5_1" value="0" ID="Text32"></td>
+	<td><input type="text" maxlength="5" size="5" name="velocity5_2" value="0" ID="Text34"></td>
+	<td><input type="text" maxlength="5" size="5" name="business5_2" value="0" ID="Text35"></td>
+	<td><input type="text" maxlength="5" size="5" name="velocity5_3" value="0" ID="Text36"></td>
+	<td><input type="text" maxlength="5" size="5" name="business5_3" value="0" ID="Text37"></td>
+	<td><input type="text" maxlength="5" size="5" name="velocity5_4" value="0" ID="Text47"></td>
+	<td><input disabled type="text" maxlength="5" size="5" name="business5_total" value="0" ID="Text42"></td>
+</tr>
+<tr>
+	<td><strong>Total</strong></td>
+	<td colspan="7">&nbsp;</td>
+	<td><input disabled type="text" maxlength="5" size="5" name="total_value" value="0" ID="Text48"></td>
+</tr>
+</table>
+<input type="button" onclick="compute();" name="calc" value="Calculate">
+</form>
+
+</div>
+
+<br>
+<br>
+<div class="footer">
+ <table border="0" width="100%" ID="Table1"><tr>
+ <td align="left" valign="middle">
+ Last updated on .<br>
+ </td>
+ <td align="center"><strong>THE XP GAME</strong></td>
+ <td align="right" valign="middle">
+	Designed by:
+	<A href= "http://www.nayima.be/" class="logo" title="Nayima">&nbsp;Nayima&nbsp;&nbsp;</A>
+	 and <A href= "http://www.tryx.com/"><IMG border=0 src="images/Tryx.jpg" width=77 height=31 alt="Tryx"></A><br>
+	  Contact us at <a href="mailto:info@xpgame.be">info@xpgame.be</a>
+ </td>
+ </tr></table>
+</div>
+
+
+
+</BODY>
+
+<!-- XP Game site maintained by Tryx and Nayima -->
+</HTML>
