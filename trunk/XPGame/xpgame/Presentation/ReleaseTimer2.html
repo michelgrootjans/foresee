@@ -1,0 +1,120 @@
+
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<HTML lang="en">
+
+<!-- XP Game site maintained by Tryx and Nayima -->
+<HEAD>
+
+<SCRIPT LANGUAGE="JavaScript" type="text/javascript">
+<!-- Begin
+function changeRow(row,nbitems) {
+	var i
+	for (i=1;i <= nbitems;i++) {
+		var cell = row.getElementsByTagName("td").item(i) ;
+		cell.className = 'filled' ;
+	}
+}
+
+function resetClock() {
+	var estimationTime = 15;
+	var planTime = 15;
+	var implementTime = 45;
+	
+	var element = document.getElementsByTagName("table").item(0);
+	var estimateRow = element.getElementsByTagName("tr").item(0) ;
+	var planRow = element.getElementsByTagName("tr").item(1) ;
+	var implementRow = element.getElementsByTagName("tr").item(2) ;
+
+	changeRow(estimateRow,estimationTime) ;
+	changeRow(planRow,planTime) ;
+	changeROw(implementRow,implementTime) ;
+}
+
+function changeCell(row,nbitems) {
+	var i
+	for (i=1;i <= nbitems;i++) {
+		var cell = row.getElementsByTagName("td").item(i) ;
+		if (cell.className.indexOf('done') == -1) {
+			cell.className = 'done' ;
+			return true ;
+		}
+	}
+	return false ;
+}
+
+function clock() {
+	var continueChecking = true ;
+	var estimationTime = 15;
+	var planTime = 15;
+	var implementTime = 45;
+	
+	var element = document.getElementsByTagName("table").item(0);
+	var estimateRow = element.getElementsByTagName("tr").item(0) ;
+	var planRow = element.getElementsByTagName("tr").item(1) ;
+	var implementRow = element.getElementsByTagName("tr").item(2) ;
+
+	if (!changeCell(estimateRow,estimationTime)) {
+		if (!changeCell(planRow,planTime)) {
+			if (!changeCell(implementRow,implementTime)) {
+				alert("TIME'S UP !!!") ;
+				continueChecking = false ;
+			}
+		}
+	}
+	if (continueChecking) {
+		window.setTimeout("clock()", 20000);
+	}
+}
+//  End -->
+</SCRIPT>
+<BASE >
+<META HTTP-EQUIV="Content-Type" content="text/html; charset=iso-8859-1">
+<META name="Author" content="Vera Peeters, Pascal Van Cauwenberghe, Martine Verluyten">
+<META name="Keywords" content="belgium,xp,planning game,velocity,extreme programming,agile,xp game">
+<META name="Description" content="XP Game presentation">
+<LINK REL="stylesheet" HREF="style.css" TYPE="text/css">
+<TITLE>Timer Iteration 2 and 3</TITLE>
+</HEAD>
+<BODY>
+<div class="main" name="main">
+<h1 class="center">Timer Iteration 2 and 3</h1>
+
+<table width="100%" class="timer" name="progress" ID="Table1">
+<tr ><td><strong>Estimate</strong><br>&nbsp;&nbsp;Team == developers</td>
+<td id="estimate1" name="estimate1" class="filled">&nbsp;</td><td id="estimate2" name="estimate2" class="filled">&nbsp;</td><td id="estimate3" name="estimate3" class="filled">&nbsp;</td><td id="estimate4" name="estimate4" class="filled">&nbsp;</td><td id="estimate5" name="estimate5" class="filled">&nbsp;</td><td id="estimate6" name="estimate6" class="filled">&nbsp;</td><td id="estimate7" name="estimate7" class="filled">&nbsp;</td><td id="estimate8" name="estimate8" class="filled">&nbsp;</td><td id="estimate9" name="estimate9" class="filled">&nbsp;</td><td id="estimate10" name="estimate10" class="filled">&nbsp;</td><td id="estimate11" name="estimate11" class="filled">&nbsp;</td><td id="estimate12" name="estimate12" class="filled">&nbsp;</td><td id="estimate13" name="estimate13" class="filled">&nbsp;</td><td id="estimate14" name="estimate14" class="filled">&nbsp;</td><td id="estimate15" name="estimate15" class="filled">&nbsp;</td><td id="estimate0" class="empty">&nbsp;</td><td id="estimate0" class="empty">&nbsp;</td><td id="estimate0" class="empty">&nbsp;</td><td id="estimate0" class="empty">&nbsp;</td><td id="estimate0" class="empty">&nbsp;</td><td id="estimate0" class="empty">&nbsp;</td><td id="estimate0" class="empty">&nbsp;</td><td id="estimate0" class="empty">&nbsp;</td><td id="estimate0" class="empty">&nbsp;</td><td id="estimate0" class="empty">&nbsp;</td><td id="estimate0" class="empty">&nbsp;</td><td id="estimate0" class="empty">&nbsp;</td><td id="estimate0" class="empty">&nbsp;</td><td id="estimate0" class="empty">&nbsp;</td><td id="estimate0" class="empty">&nbsp;</td><td id="estimate0" class="empty">&nbsp;</td><td id="estimate0" class="empty">&nbsp;</td><td id="estimate0" class="empty">&nbsp;</td><td id="estimate0" class="empty">&nbsp;</td><td id="estimate0" class="empty">&nbsp;</td><td id="estimate0" class="empty">&nbsp;</td><td id="estimate0" class="empty">&nbsp;</td><td id="estimate0" class="empty">&nbsp;</td><td id="estimate0" class="empty">&nbsp;</td><td id="estimate0" class="empty">&nbsp;</td><td id="estimate0" class="empty">&nbsp;</td><td id="estimate0" class="empty">&nbsp;</td><td id="estimate0" class="empty">&nbsp;</td><td id="estimate0" class="empty">&nbsp;</td><td id="estimate0" class="empty">&nbsp;</td><td id="estimate0" class="empty">&nbsp;</td></tr>
+<tr name="plan"><td><strong>Plan</strong><br>&nbsp;&nbsp;Team == customers</td>
+<td id="plan1" name="plan1" class="filled">&nbsp;</td><td id="plan2" name="plan2" class="filled">&nbsp;</td><td id="plan3" name="plan3" class="filled">&nbsp;</td><td id="plan4" name="plan4" class="filled">&nbsp;</td><td id="plan5" name="plan5" class="filled">&nbsp;</td><td id="plan6" name="plan6" class="filled">&nbsp;</td><td id="plan7" name="plan7" class="filled">&nbsp;</td><td id="plan8" name="plan8" class="filled">&nbsp;</td><td id="plan9" name="plan9" class="filled">&nbsp;</td><td id="plan10" name="plan10" class="filled">&nbsp;</td><td id="plan11" name="plan11" class="filled">&nbsp;</td><td id="plan12" name="plan12" class="filled">&nbsp;</td><td id="plan13" name="plan13" class="filled">&nbsp;</td><td id="plan14" name="plan14" class="filled">&nbsp;</td><td id="plan15" name="plan15" class="filled">&nbsp;</td><td id="plan0" class="empty">&nbsp;</td><td id="plan0" class="empty">&nbsp;</td><td id="plan0" class="empty">&nbsp;</td><td id="plan0" class="empty">&nbsp;</td><td id="plan0" class="empty">&nbsp;</td><td id="plan0" class="empty">&nbsp;</td><td id="plan0" class="empty">&nbsp;</td><td id="plan0" class="empty">&nbsp;</td><td id="plan0" class="empty">&nbsp;</td><td id="plan0" class="empty">&nbsp;</td><td id="plan0" class="empty">&nbsp;</td><td id="plan0" class="empty">&nbsp;</td><td id="plan0" class="empty">&nbsp;</td><td id="plan0" class="empty">&nbsp;</td><td id="plan0" class="empty">&nbsp;</td><td id="plan0" class="empty">&nbsp;</td><td id="plan0" class="empty">&nbsp;</td><td id="plan0" class="empty">&nbsp;</td><td id="plan0" class="empty">&nbsp;</td><td id="plan0" class="empty">&nbsp;</td><td id="plan0" class="empty">&nbsp;</td><td id="plan0" class="empty">&nbsp;</td><td id="plan0" class="empty">&nbsp;</td><td id="plan0" class="empty">&nbsp;</td><td id="plan0" class="empty">&nbsp;</td><td id="plan0" class="empty">&nbsp;</td><td id="plan0" class="empty">&nbsp;</td><td id="plan0" class="empty">&nbsp;</td><td id="plan0" class="empty">&nbsp;</td><td id="plan0" class="empty">&nbsp;</td><td id="plan0" class="empty">&nbsp;</td></tr>
+<tr><td><strong>Implement</strong><br>&nbsp;&nbsp;Team == developers</td>
+<td id="implement1" name="implement1" class="filled">&nbsp;</td><td id="implement2" name="implement2" class="filled">&nbsp;</td><td id="implement3" name="implement3" class="filled">&nbsp;</td><td id="implement4" name="implement4" class="filled">&nbsp;</td><td id="implement5" name="implement5" class="filled">&nbsp;</td><td id="implement6" name="implement6" class="filled">&nbsp;</td><td id="implement7" name="implement7" class="filled">&nbsp;</td><td id="implement8" name="implement8" class="filled">&nbsp;</td><td id="implement9" name="implement9" class="filled">&nbsp;</td><td id="implement10" name="implement10" class="filled">&nbsp;</td><td id="implement11" name="implement11" class="filled">&nbsp;</td><td id="implement12" name="implement12" class="filled">&nbsp;</td><td id="implement13" name="implement13" class="filled">&nbsp;</td><td id="implement14" name="implement14" class="filled">&nbsp;</td><td id="implement15" name="implement15" class="filled">&nbsp;</td><td id="implement16" name="implement16" class="filled">&nbsp;</td><td id="implement17" name="implement17" class="filled">&nbsp;</td><td id="implement18" name="implement18" class="filled">&nbsp;</td><td id="implement19" name="implement19" class="filled">&nbsp;</td><td id="implement20" name="implement20" class="filled">&nbsp;</td><td id="implement21" name="implement21" class="filled">&nbsp;</td><td id="implement22" name="implement22" class="filled">&nbsp;</td><td id="implement23" name="implement23" class="filled">&nbsp;</td><td id="implement24" name="implement24" class="filled">&nbsp;</td><td id="implement25" name="implement25" class="filled">&nbsp;</td><td id="implement26" name="implement26" class="filled">&nbsp;</td><td id="implement27" name="implement27" class="filled">&nbsp;</td><td id="implement28" name="implement28" class="filled">&nbsp;</td><td id="implement29" name="implement29" class="filled">&nbsp;</td><td id="implement30" name="implement30" class="filled">&nbsp;</td><td id="implement31" name="implement31" class="filled">&nbsp;</td><td id="implement32" name="implement32" class="filled">&nbsp;</td><td id="implement33" name="implement33" class="filled">&nbsp;</td><td id="implement34" name="implement34" class="filled">&nbsp;</td><td id="implement35" name="implement35" class="filled">&nbsp;</td><td id="implement36" name="implement36" class="filled">&nbsp;</td><td id="implement37" name="implement37" class="filled">&nbsp;</td><td id="implement38" name="implement38" class="filled">&nbsp;</td><td id="implement39" name="implement39" class="filled">&nbsp;</td><td id="implement40" name="implement40" class="filled">&nbsp;</td><td id="implement41" name="implement41" class="filled">&nbsp;</td><td id="implement42" name="implement42" class="filled">&nbsp;</td><td id="implement43" name="implement43" class="filled">&nbsp;</td><td id="implement44" name="implement44" class="filled">&nbsp;</td><td id="implement45" name="implement45" class="filled">&nbsp;</td><td id="implement0" class="empty">&nbsp;</td></tr>
+</table>
+<form action="http://pikachu/xpg/ReleaseTimer.asp" method="get" ID="Form1">
+<input type="button" name="START" value="START" onclick="clock();" ID="Button1">
+<!--<input type="button" name="action" value="REFRESH" onclick="resetClock();" ID="Submit1">-->
+</form>
+</div>
+
+
+<br>
+<br>
+<div class="footer">
+ <table border="0" width="100%" ID="Table1"><tr>
+ <td align="left" valign="middle">
+ Last updated on .<br>
+ </td>
+ <td align="center"><strong>THE XP GAME</strong></td>
+ <td align="right" valign="middle">
+	Designed by:
+	<A href= "http://www.nayima.be/" class="logo" title="Nayima">&nbsp;Nayima&nbsp;&nbsp;</A>
+	 and <A href= "http://www.tryx.com/"><IMG border=0 src="images/Tryx.jpg" width=77 height=31 alt="Tryx"></A><br>
+	  Contact us at <a href="mailto:info@xpgame.be">info@xpgame.be</a>
+ </td>
+ </tr></table>
+</div>
+
+
+
+</BODY>
+
+<!-- XP Game site maintained by Tryx and Nayima -->
+</HTML>
