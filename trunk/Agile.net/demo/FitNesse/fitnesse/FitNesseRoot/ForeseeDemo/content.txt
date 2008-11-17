@@ -1,0 +1,7 @@
+If you want these tests to run, be sure to point them to the right *.dll path
+
+!contents -R
+!path D:\Projects\foresee\Agile.net\demo\FitNesse\FooSolution\FooTests\bin\Debug\FooTests.dll
+!define COLLAPSE_SETUP {true}
+!define COLLAPSE_TEARDOWN {true}
+
