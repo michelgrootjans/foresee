@@ -1,0 +1,20 @@
+!1 Register users
+!|ActionFixture|
+|start|Registration Script|
+|enter|First Name|Michel|
+|enter|Last Name|Grootjans|
+|press|register|
+|enter|First Name|Pascal|
+|enter|Last Name|Mestdach|
+|press|register|
+|enter|First Name|Peter|
+|enter|Last Name|Cosemans|
+|press|register|
+|check|Number Of Registered Users|3|
+
+!1 Verify registrations
+!|Registrations|
+|First Name|Last Name|
+|Michel|Grootjans|
+|Pascal|Mestdach|
+|Peter|Cosemans|

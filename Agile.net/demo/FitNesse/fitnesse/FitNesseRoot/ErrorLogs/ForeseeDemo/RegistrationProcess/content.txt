@@ -1,0 +1,4 @@
+|'''Date: '''|!-8:41:09 PM (CET) on maandag, november 17, 2008-!|
+|'''Command: '''|!-dotnet2\FitServer.exe D:\Projects\foresee\Alt.net\fitnesse\FooSolution\FooTests\bin\Debug\FooTests.dll;classes;fitnesse.jar;fitlibrary.jar;dotnet2\fit.dll;dotnet2\fitlibrary.dll wxpp-grootmi 8888 26-!|
+|'''Exit code: '''|!-0-!|
+|'''Time elapsed: '''|!-0.359 seconds-!|
