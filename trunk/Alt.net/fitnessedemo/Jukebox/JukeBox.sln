@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Jukebox.Domain", "Jukebox.Domain\Jukebox.Domain.csproj", "{9A33E5B0-37C5-4D23-9F59-060F64296FB8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Jukebox.IntegrationTests", "Jukebox.IntegrationTests\Jukebox.IntegrationTests.csproj", "{8D8E1D83-655E-4FE9-A516-C47EE53EE151}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9A33E5B0-37C5-4D23-9F59-060F64296FB8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9A33E5B0-37C5-4D23-9F59-060F64296FB8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9A33E5B0-37C5-4D23-9F59-060F64296FB8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9A33E5B0-37C5-4D23-9F59-060F64296FB8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8D8E1D83-655E-4FE9-A516-C47EE53EE151}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8D8E1D83-655E-4FE9-A516-C47EE53EE151}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8D8E1D83-655E-4FE9-A516-C47EE53EE151}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8D8E1D83-655E-4FE9-A516-C47EE53EE151}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
