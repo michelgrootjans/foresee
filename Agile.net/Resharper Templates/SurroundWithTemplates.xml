@@ -1,0 +1,10 @@
+<TemplatesExport>
+  <Template uid="9c405ac3-c651-4180-ba32-7c98d473351b" text="string.Format($SELECTION$, $END$);" shortcut="" description="String Format" reformat="true" shortenQualifiedReferences="true">
+    <Context>
+      <CSharpContext context="Everywhere" minimumLanguageVersion="2.0" />
+    </Context>
+    <Categories />
+    <Variables />
+    <CustomProperties />
+  </Template>
+</TemplatesExport>
