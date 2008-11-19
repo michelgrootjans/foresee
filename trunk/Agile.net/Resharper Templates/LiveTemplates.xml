@@ -1,0 +1,199 @@
+<TemplatesExport>
+  <Template uid="89e67b16-8a0b-4b9b-84a5-124214736408" text="public class $TestName$ : ArrangeActAssert&lt;$SUT$&gt;&#xD;&#xA;{&#xD;&#xA;    public override void Arrange()&#xD;&#xA;    {&#xD;&#xA;    }&#xD;&#xA;&#xD;&#xA;    public override $SUT$ CreateSUT()&#xD;&#xA;    {&#xD;&#xA;    }&#xD;&#xA;&#xD;&#xA;    public override void Act()&#xD;&#xA;    {&#xD;&#xA;    }&#xD;&#xA;&#xD;&#xA;    [Test]&#xD;&#xA;    public void $observation$()&#xD;&#xA;    {&#xD;&#xA;        &#xD;&#xA;    }&#xD;&#xA;}&#xD;&#xA;" shortcut="aaa" description="AAA style test" reformat="true" shortenQualifiedReferences="true">
+    <Context>
+      <CSharpContext context="Everywhere" minimumLanguageVersion="2.0" />
+    </Context>
+    <Categories>
+      <Category name="Test" />
+    </Categories>
+    <Variables>
+      <Variable name="SUT" expression="" initialRange="0" />
+      <Variable name="TestName" expression="" initialRange="0" />
+      <Variable name="observation" expression="" initialRange="0" />
+    </Variables>
+    <CustomProperties />
+  </Template>
+  <Template uid="6a651cd6-e631-40b4-9c29-2f53dd864643" text="[TestFixture]&#xD;&#xA;public class $CLASSNAME$&#xD;&#xA;{&#xD;&#xA;	$END$   &#xD;&#xA;}" shortcut="utclass" description="Create a TestFicture class " reformat="true" shortenQualifiedReferences="true">
+    <Context>
+      <CSharpContext context="Everywhere" minimumLanguageVersion="2.0" />
+    </Context>
+    <Categories>
+      <Category name="Test" />
+    </Categories>
+    <Variables>
+      <Variable name="CLASSNAME" expression="" initialRange="0" />
+    </Variables>
+    <CustomProperties />
+  </Template>
+  <Template uid="efbc85f3-8a46-45dc-8ae1-2e60e2a58b10" text="[Test]&#xD;&#xA;[ExpectedException(typeof($ExpectedException$))]&#xD;&#xA;public void $TESTNAME$()&#xD;&#xA;{&#xD;&#xA;   $END$    &#xD;&#xA;}" shortcut="utex" description="New Test to verify that Exception is thrown" reformat="true" shortenQualifiedReferences="true">
+    <Context>
+      <CSharpContext context="Everywhere" minimumLanguageVersion="2.0" />
+    </Context>
+    <Categories>
+      <Category name="Test" />
+    </Categories>
+    <Variables>
+      <Variable name="ExpectedException" expression="" initialRange="0" />
+      <Variable name="TESTNAME" expression="" initialRange="0" />
+    </Variables>
+    <CustomProperties />
+  </Template>
+  <Template uid="9fc35c90-f9a3-409c-a7c1-3754ae356ef2" text="[RowTest]&#xD;&#xA;public void $TESTNAME$()&#xD;&#xA;{&#xD;&#xA;  $END$&#xD;&#xA;}" shortcut="utrow" description="Row Test" reformat="true" shortenQualifiedReferences="true">
+    <Context>
+      <CSharpContext context="Everywhere" minimumLanguageVersion="2.0" />
+    </Context>
+    <Categories>
+      <Category name="Test" />
+    </Categories>
+    <Variables>
+      <Variable name="TESTNAME" expression="" initialRange="0" />
+    </Variables>
+    <CustomProperties />
+  </Template>
+  <Template uid="64be94b8-e3f3-4880-9e81-921658d4f96e" text="[Test]&#xD;&#xA;public void $TESTNAME$()&#xD;&#xA;{&#xD;&#xA;   $END$    &#xD;&#xA;}" shortcut="utt" description="New Test" reformat="true" shortenQualifiedReferences="true">
+    <Context>
+      <CSharpContext context="Everywhere" minimumLanguageVersion="2.0" />
+    </Context>
+    <Categories>
+      <Category name="Test" />
+    </Categories>
+    <Variables>
+      <Variable name="TESTNAME" expression="" initialRange="0" />
+    </Variables>
+    <CustomProperties />
+  </Template>
+  <Template uid="0fd9dd9f-870b-4897-93b2-e50cd15e5499" text="[TearDown]&#xD;&#xA;public void TearDown()&#xD;&#xA;{&#xD;&#xA;  $END$&#xD;&#xA;}" shortcut="utdown" description="Test TearDown" reformat="true" shortenQualifiedReferences="true">
+    <Context>
+      <CSharpContext context="Everywhere" minimumLanguageVersion="2.0" />
+    </Context>
+    <Categories>
+      <Category name="Test" />
+    </Categories>
+    <Variables />
+    <CustomProperties />
+  </Template>
+  <Template uid="553bec54-e388-4f50-a0da-46c8067538e6" text="[TestFixtureTearDown]&#xD;&#xA;public void FixtureTearDown()&#xD;&#xA;{&#xD;&#xA;   $END$&#xD;&#xA;}" shortcut="utfixtdown" description="Test Fixture Tear Down" reformat="true" shortenQualifiedReferences="true">
+    <Context>
+      <CSharpContext context="Everywhere" minimumLanguageVersion="2.0" />
+    </Context>
+    <Categories>
+      <Category name="Test" />
+    </Categories>
+    <Variables />
+    <CustomProperties />
+  </Template>
+  <Template uid="a186cf36-ef66-4866-bd5c-ea089bb89180" text="[TestFixtureSetUp]&#xD;&#xA;public void FixtureSetUp()&#xD;&#xA;{&#xD;&#xA;   $END$&#xD;&#xA;}" shortcut="utfixtup" description="Test Fixture Setup" reformat="true" shortenQualifiedReferences="true">
+    <Context>
+      <CSharpContext context="Everywhere" minimumLanguageVersion="2.0" />
+    </Context>
+    <Categories>
+      <Category name="Test" />
+    </Categories>
+    <Variables />
+    <CustomProperties />
+  </Template>
+  <Template uid="c7405ff8-5c46-4bc3-89ba-2e35be767073" text="[SetUp]&#xD;&#xA;public void SetUp()&#xD;&#xA;{&#xD;&#xA;   $END$&#xD;&#xA;}" shortcut="utup" description="SetUp" reformat="true" shortenQualifiedReferences="true">
+    <Context>
+      <CSharpContext context="Everywhere" minimumLanguageVersion="2.0" />
+    </Context>
+    <Categories>
+      <Category name="Test" />
+    </Categories>
+    <Variables />
+    <CustomProperties />
+  </Template>
+  <Template uid="f991d75d-10bb-47d1-b8d6-01edd75ad20a" text="Assert.AreEqual($EXPECTED$, $ACTUAL$);" shortcut="aae" description="Assert.AreEqual" reformat="true" shortenQualifiedReferences="true">
+    <Context>
+      <CSharpContext context="Everywhere" minimumLanguageVersion="2.0" />
+    </Context>
+    <Categories>
+      <Category name="Assert" />
+    </Categories>
+    <Variables>
+      <Variable name="EXPECTED" expression="" initialRange="0" />
+      <Variable name="ACTUAL" expression="" initialRange="0" />
+    </Variables>
+    <CustomProperties />
+  </Template>
+  <Template uid="5cf56067-dfd9-4be7-953e-bac9458fdf51" text="Assert.IsFalse($CONDITION$);" shortcut="aif" description="Assert.IsFalse" reformat="true" shortenQualifiedReferences="true">
+    <Context>
+      <CSharpContext context="Everywhere" minimumLanguageVersion="2.0" />
+    </Context>
+    <Categories>
+      <Category name="Assert" />
+    </Categories>
+    <Variables>
+      <Variable name="CONDITION" expression="" initialRange="0" />
+    </Variables>
+    <CustomProperties />
+  </Template>
+  <Template uid="0cbf7b9f-d1e7-4886-9b54-fd2a28766ae5" text="Assert.IsNull($OBJECTTOCHECK$)" shortcut="ain" description="Assert.IsNull" reformat="true" shortenQualifiedReferences="true">
+    <Context>
+      <CSharpContext context="Everywhere" minimumLanguageVersion="2.0" />
+    </Context>
+    <Categories>
+      <Category name="Assert" />
+    </Categories>
+    <Variables>
+      <Variable name="OBJECTTOCHECK" expression="" initialRange="0" />
+    </Variables>
+    <CustomProperties />
+  </Template>
+  <Template uid="07806e3d-27c1-4c5b-b2c5-35e736e48b75" text="Assert.IsTrue($CONDITION$);" shortcut="ait" description="Assert.IsTrue" reformat="true" shortenQualifiedReferences="true">
+    <Context>
+      <CSharpContext context="Everywhere" minimumLanguageVersion="2.0" />
+    </Context>
+    <Categories>
+      <Category name="Assert" />
+    </Categories>
+    <Variables>
+      <Variable name="CONDITION" expression="" initialRange="0" />
+    </Variables>
+    <CustomProperties />
+  </Template>
+  <Template uid="58e0d74c-de4a-4972-8084-0d2688f4982d" text="Assert.IsNotNull($OBJECTTOCHECK$);" shortcut="ann" description="Assert.IsNotNull" reformat="true" shortenQualifiedReferences="true">
+    <Context>
+      <CSharpContext context="Everywhere" minimumLanguageVersion="2.0" />
+    </Context>
+    <Categories>
+      <Category name="Assert" />
+    </Categories>
+    <Variables>
+      <Variable name="OBJECTTOCHECK" expression="" initialRange="0" />
+    </Variables>
+    <CustomProperties />
+  </Template>
+  <Template uid="1f1a1970-7803-487d-9e30-750660fdca6e" text="IList&lt;$LISTTYPE$&gt; $LISTNAME$ = new List&lt;$LISTTYPE$&gt;();" shortcut="glist" description="Generic IList&lt;T&gt; Declaration" reformat="true" shortenQualifiedReferences="true">
+    <Context>
+      <CSharpContext context="Everywhere" minimumLanguageVersion="2.0" />
+    </Context>
+    <Categories />
+    <Variables>
+      <Variable name="LISTTYPE" expression="" initialRange="0" />
+      <Variable name="LISTNAME" expression="" initialRange="0" />
+    </Variables>
+    <CustomProperties />
+  </Template>
+  <Template uid="4d8b98dc-8f47-4639-aab0-2bb3ec4f1c26" text="throw new NotImplementedException();" shortcut="thrn" description="Not implemented exception" reformat="true" shortenQualifiedReferences="true">
+    <Context>
+      <CSharpContext context="Everywhere" minimumLanguageVersion="2.0" />
+    </Context>
+    <Categories />
+    <Variables />
+    <CustomProperties />
+  </Template>
+  <Template uid="bb3315ef-a4ff-45e2-be70-55d9cd23571f" text="public class $TestName$ : AbstractAAAIntegrationTest&lt;$SUT$&gt;&#xD;&#xA;{&#xD;&#xA;	protected override string[] ConfigLocations { get { return SpringConfig.ConfigLocations; } }&#xD;&#xA; &#xD;&#xA;    public override void Arrange()&#xD;&#xA;    {&#xD;&#xA;		base.Arrange();&#xD;&#xA;    }&#xD;&#xA;&#xD;&#xA;    public override void Act()&#xD;&#xA;    {&#xD;&#xA;    }&#xD;&#xA;&#xD;&#xA;    [Test]&#xD;&#xA;    public void $observation$()&#xD;&#xA;    {&#xD;&#xA;        &#xD;&#xA;    }&#xD;&#xA;}" shortcut="aaai" description="AAA style integration test" reformat="true" shortenQualifiedReferences="true">
+    <Context>
+      <CSharpContext context="Everywhere" minimumLanguageVersion="2.0" />
+    </Context>
+    <Categories>
+      <Category name="Test" />
+    </Categories>
+    <Variables>
+      <Variable name="TestName" expression="" initialRange="0" />
+      <Variable name="SUT" expression="" initialRange="0" />
+      <Variable name="observation" expression="" initialRange="0" />
+    </Variables>
+    <CustomProperties />
+  </Template>
+</TemplatesExport>

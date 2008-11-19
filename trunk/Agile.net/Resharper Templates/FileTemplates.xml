@@ -1,0 +1,107 @@
+<TemplatesExport>
+  <Template uid="f4d887be-f1e1-43f8-bb94-898a06c22901" text="&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot; ?&gt;&#xD;&#xA;&lt;hibernate-mapping&#xD;&#xA;  xmlns=&quot;urn:nhibernate-mapping-2.2&quot;&#xD;&#xA;  assembly=&quot;$ASSEMBLY$&quot;&#xD;&#xA;  namespace=&quot;$NAMESPACE$&quot;&#xD;&#xA;  default-lazy=&quot;false&quot;&#xD;&#xA;  default-access=&quot;field.camelcase&quot;&gt;&#xD;&#xA;  &#xD;&#xA;  &lt;class name=&quot;$CLASSNAME$&quot; table=&quot;$TABLENAME$&quot;&gt;    &#xD;&#xA;    $END$&#xD;&#xA;  &lt;/class&gt;  &#xD;&#xA;  &#xD;&#xA;&lt;/hibernate-mapping&gt;" shortcut="" description="&amp;NHibernateMappingFile" reformat="true" shortenQualifiedReferences="true">
+    <Categories />
+    <Variables>
+      <Variable name="ASSEMBLY" expression="" initialRange="0" />
+      <Variable name="NAMESPACE" expression="" initialRange="0" />
+      <Variable name="CLASSNAME" expression="" initialRange="0" />
+      <Variable name="TABLENAME" expression="" initialRange="0" />
+    </Variables>
+    <CustomProperties>
+      <Property key="FileName" value="Mapping.hbm" />
+      <Property key="Extension" value="xml" />
+      <Property key="ValidateFileName" value="False" />
+    </CustomProperties>
+  </Template>
+  <Template uid="3170925c-b3c3-4ff9-952e-69fa4340514f" text="using NUnit.Framework;&#xD;&#xA;&#xD;&#xA;namespace $NAMESPACE$&#xD;&#xA;{&#xD;&#xA;    [TestFixture]&#xD;&#xA;    public class $CLASSNAME$&#xD;&#xA;    {        &#xD;&#xA;        [Test]&#xD;&#xA;        public void $FIRST_TEST_NAME$()&#xD;&#xA;        {&#xD;&#xA;            $END$&#xD;&#xA;        }&#xD;&#xA;    }&#xD;&#xA;}" shortcut="" description="NUnitTest" reformat="true" shortenQualifiedReferences="true">
+    <Context>
+      <ProjectLanguageContext language="CSharp" />
+    </Context>
+    <Categories>
+      <Category name="NUnit" />
+    </Categories>
+    <Variables>
+      <Variable name="CLASSNAME" expression="" initialRange="0" />
+      <Variable name="FIRST_TEST_NAME" expression="" initialRange="0" />
+      <Variable name="NAMESPACE" expression="fileDefaultNamespace()" initialRange="0" />
+    </Variables>
+    <CustomProperties>
+      <Property key="FileName" value="NUnitTest" />
+      <Property key="Extension" value="cs" />
+      <Property key="ValidateFileName" value="False" />
+    </CustomProperties>
+  </Template>
+  <Template uid="fcc50c06-e441-4827-a3a1-926aa45c49a4" text="using System;&#xD;&#xA;using System.Reflection;&#xD;&#xA;using System.Runtime.InteropServices;&#xD;&#xA;[assembly : AssemblyCompany(&quot;$COMPANY$&quot;)]&#xD;&#xA;[assembly : AssemblyProduct(&quot;$PRODUCT$&quot;)]&#xD;&#xA;[assembly : AssemblyCopyright(&quot;&quot;)]&#xD;&#xA;[assembly : CLSCompliant(false)]&#xD;&#xA;[assembly : ComVisible(false)]&#xD;&#xA;[assembly : AssemblyVersion(&quot;1.0.0.*&quot;)]&#xD;&#xA;[assembly : AssemblyFileVersion(&quot;1.0.0.0&quot;)]" shortcut="" description="Solution Info File" reformat="true" shortenQualifiedReferences="true">
+    <Context>
+      <ProjectLanguageContext language="CSharp" />
+    </Context>
+    <Categories />
+    <Variables>
+      <Variable name="COMPANY" expression="" initialRange="0" />
+      <Variable name="PRODUCT" expression="" initialRange="0" />
+    </Variables>
+    <CustomProperties>
+      <Property key="FileName" value="Class" />
+      <Property key="Extension" value="cs" />
+      <Property key="ValidateFileName" value="False" />
+    </CustomProperties>
+  </Template>
+  <Template uid="838f1911-8c7f-42b6-8dde-c4cc30a3e787" text="&lt;?xml version='1.0' encoding='utf-8'?&gt;&#xD;&#xA;&lt;Wix xmlns='http://schemas.microsoft.com/wix/2003/01/wi'&gt;&#xD;&#xA;  &lt;Product Name='$PRODUCTNAME$' Id='$PRODUCTGUID$'&#xD;&#xA;           Language='1033' Codepage='1252' Version='1.0.0' Manufacturer='$MANUFACTURER$' &#xD;&#xA;           UpgradeCode='$UPGRADEGUID$'&gt;&#xD;&#xA;&#xD;&#xA;    &lt;Package Id='????????-????-????-????-????????????' Keywords='Installer'&#xD;&#xA;             Description='$PACKAGEDESCRIPTION$' Manufacturer='$MANUFACTURER$'&#xD;&#xA;             InstallerVersion='100' Languages='1033' SummaryCodepage='1252' Compressed='yes' /&gt;&#xD;&#xA;&#xD;&#xA;    &lt;Media Id='1' Cabinet='$CABFILENAME$.cab' EmbedCab='yes' /&gt;&#xD;&#xA;    &#xD;&#xA;    &lt;Directory Id='TARGETDIR' Name='SourceDir'&gt;&#xD;&#xA;      &lt;Directory Id='ProgramFilesFolder' Name='PFiles'&gt;        &#xD;&#xA;        &lt;Directory Id='INSTALLDIR' Name='$DIRSHORTNAME$' LongName='$DIRLONGNAME$'&gt;           &#xD;&#xA;          &lt;Component Id='$COMPONENTID$' DiskId='1' Guid='$COMPONENTGUID$'&gt;&#xD;&#xA;            &lt;!-- put files here --&gt;          &#xD;&#xA;          &lt;/Component&gt;&#xD;&#xA;        &lt;/Directory&gt;          &#xD;&#xA;      &lt;/Directory&gt;&#xD;&#xA;    &lt;/Directory&gt;&#xD;&#xA;    &#xD;&#xA;    &lt;Feature Id='Complete' Level='1'&gt;&#xD;&#xA;      &lt;ComponentRef Id='$COMPONENTID$' /&gt;      &#xD;&#xA;    &lt;/Feature&gt;&#xD;&#xA;&#xD;&#xA;  &lt;/Product&gt;&#xD;&#xA;&lt;/Wix&gt;" shortcut="" description="Wix Script" reformat="true" shortenQualifiedReferences="true">
+    <Categories />
+    <Variables>
+      <Variable name="PRODUCTNAME" expression="" initialRange="0" />
+      <Variable name="PRODUCTGUID" expression="" initialRange="0" />
+      <Variable name="MANUFACTURER" expression="" initialRange="0" />
+      <Variable name="UPGRADEGUID" expression="" initialRange="0" />
+      <Variable name="PACKAGEDESCRIPTION" expression="" initialRange="0" />
+      <Variable name="CABFILENAME" expression="" initialRange="0" />
+      <Variable name="DIRSHORTNAME" expression="" initialRange="0" />
+      <Variable name="DIRLONGNAME" expression="" initialRange="0" />
+      <Variable name="COMPONENTID" expression="" initialRange="0" />
+      <Variable name="COMPONENTGUID" expression="" initialRange="0" />
+    </Variables>
+    <CustomProperties>
+      <Property key="FileName" value="WixScript" />
+      <Property key="Extension" value="wxs" />
+      <Property key="ValidateFileName" value="False" />
+    </CustomProperties>
+  </Template>
+  <Template uid="2cd0b937-5b7e-4b99-9fdf-4952e0151399" text="using Artilium.Arta.Test.AAA;&#xD;&#xA;using NUnit.Framework;&#xD;&#xA;&#xD;&#xA;namespace $namespace$&#xD;&#xA;{&#xD;&#xA;    public class $TestName$ : AbstractAAAIntegrationTest&lt;$SUT$&gt;&#xD;&#xA;    {&#xD;&#xA;		protected override string[] ConfigLocations { get { return SpringConfig.ConfigLocations; } }&#xD;&#xA;		&#xD;&#xA;        public override void Arrange()&#xD;&#xA;        {&#xD;&#xA;        }&#xD;&#xA;&#xD;&#xA;        public override void Act()&#xD;&#xA;        {&#xD;&#xA;        }&#xD;&#xA;&#xD;&#xA;        [Test]&#xD;&#xA;        public void $observation$()&#xD;&#xA;        {&#xD;&#xA;            $END$&#xD;&#xA;        }&#xD;&#xA;    }&#xD;&#xA;}" shortcut="" description="AAAIntegrationStyleTest" reformat="true" shortenQualifiedReferences="true">
+    <Context>
+      <ProjectLanguageContext language="CSharp" />
+    </Context>
+    <Categories>
+      <Category name="NUnit" />
+    </Categories>
+    <Variables>
+      <Variable name="namespace" expression="fileDefaultNamespace()" initialRange="0" />
+      <Variable name="TestName" expression="" initialRange="0" />
+      <Variable name="SUT" expression="" initialRange="0" />
+      <Variable name="observation" expression="" initialRange="0" />
+    </Variables>
+    <CustomProperties>
+      <Property key="FileName" value="Class" />
+      <Property key="Extension" value="cs" />
+      <Property key="ValidateFileName" value="False" />
+    </CustomProperties>
+  </Template>
+  <Template uid="8df23da0-058b-4019-a455-e7a26c0a3c6a" text="using Artilium.Arta.Test.AAA;&#xD;&#xA;using NUnit.Framework;&#xD;&#xA;&#xD;&#xA;namespace $namespace$&#xD;&#xA;{&#xD;&#xA;    public class $TestName$ : ArrangeActAssert&lt;$SUT$&gt;&#xD;&#xA;    {&#xD;&#xA;        public override void Arrange()&#xD;&#xA;        {&#xD;&#xA;        }&#xD;&#xA;&#xD;&#xA;        public override $SUT$ CreateSUT()&#xD;&#xA;        {&#xD;&#xA;        }&#xD;&#xA;&#xD;&#xA;        public override void Act()&#xD;&#xA;        {&#xD;&#xA;        }&#xD;&#xA;&#xD;&#xA;        [Test]&#xD;&#xA;        public void $observation$()&#xD;&#xA;        {&#xD;&#xA;            $END$&#xD;&#xA;        }&#xD;&#xA;    }&#xD;&#xA;}" shortcut="" description="AAAStyleTest" reformat="true" shortenQualifiedReferences="true">
+    <Context>
+      <ProjectLanguageContext language="CSharp" />
+    </Context>
+    <Categories>
+      <Category name="NUnit" />
+    </Categories>
+    <Variables>
+      <Variable name="SUT" expression="" initialRange="0" />
+      <Variable name="TestName" expression="" initialRange="0" />
+      <Variable name="observation" expression="" initialRange="0" />
+      <Variable name="namespace" expression="fileDefaultNamespace()" initialRange="-1" />
+    </Variables>
+    <CustomProperties>
+      <Property key="FileName" value="AAAStyleTest" />
+      <Property key="Extension" value="cs" />
+      <Property key="ValidateFileName" value="False" />
+    </CustomProperties>
+  </Template>
+</TemplatesExport>
