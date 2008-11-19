@@ -1,0 +1,9 @@
+!|JukeboxRunner|
+|Create Account|Michel|With Credits|0|
+|Create Account|Pascal|With Credits|0|
+|Check|CreditFor|Michel|0|
+|Check|CreditFor|Pascal|0|
+|Deposit|1|In Account|Michel|
+|Check|CreditFor|Michel|5|
+|Play|Stairway to heaven|For|Michel|
+|Check|CreditFor|Michel|4|
