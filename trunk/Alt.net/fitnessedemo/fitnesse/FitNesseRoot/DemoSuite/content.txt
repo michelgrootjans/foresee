@@ -1,3 +1,0 @@
-!contents -R2 -g -p -f -h
-
-!path D:\Projects\foresee\Alt.net\fitnesse\Jukebox\Jukebox.IntegrationTests\bin\Debug\Jukebox.IntegrationTests.dll
