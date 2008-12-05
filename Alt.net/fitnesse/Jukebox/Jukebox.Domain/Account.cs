@@ -15,16 +15,23 @@ namespace Jukebox.Domain
             
             if (amount >= 10)
                 Credits += 10;
-            else if (amount >= 1) 
-                Credits += 1;
+            else if (amount >= 5) 
+                Credits += 5;
         }
 
         public int Credits { get; private set; }
 
         public void ConsumeCredit(int creditsToConsume)
         {
+            if (Credits < creditsToConsume)
+                throw new InvalidOperationException("You don't have enough credits.");
+            
             Credits -= creditsToConsume;
         }
 
+        public bool CanPlay(string song)
+        {
+            return Credits > 0;
+        }
     }
 }

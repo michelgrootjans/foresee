@@ -8,8 +8,8 @@
     <ProjectGuid>{8D8E1D83-655E-4FE9-A516-C47EE53EE151}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Jukebox.IntegrationTests</RootNamespace>
-    <AssemblyName>Jukebox.IntegrationTests</AssemblyName>
+    <RootNamespace>MyBlogPosts.FitNesse</RootNamespace>
+    <AssemblyName>MyBlogPosts.FitNesse</AssemblyName>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -49,7 +49,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Calculator.cs" />
+    <Compile Include="CalculatorRunner.cs" />
     <Compile Include="DepositScript.cs" />
     <Compile Include="JukeboxRunner.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
