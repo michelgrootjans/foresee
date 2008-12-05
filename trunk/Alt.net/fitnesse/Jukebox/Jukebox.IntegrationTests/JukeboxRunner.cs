@@ -2,7 +2,7 @@ using System.Collections.Generic;
 using fitlibrary;
 using Jukebox.Domain;
 
-namespace Jukebox.IntegrationTests
+namespace MyBlogPosts.FitNesse
 {
     public class JukeboxRunner : DoFixture
     {
@@ -13,7 +13,7 @@ namespace Jukebox.IntegrationTests
             accounts.Add(owner, new Account(startingCredits));
         }
 
-        public void DepositInAccount(double amount, string owner)
+        public void DepositEuroInAccount(double amount, string owner)
         {
             accounts[owner].Deposit(amount);
         }
@@ -27,6 +27,11 @@ namespace Jukebox.IntegrationTests
         public int CreditFor(string owner)
         {
             return accounts[owner].Credits;
+        }
+
+        public bool SongCanBePlayedBy(string song, string owner)
+        {
+            return accounts[owner].CanPlay(song);
         }
     }
 }

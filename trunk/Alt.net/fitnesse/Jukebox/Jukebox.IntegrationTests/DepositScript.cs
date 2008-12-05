@@ -1,10 +1,11 @@
 using fit;
 using Jukebox.Domain;
 
-namespace Jukebox.IntegrationTests
+namespace MyBlogPosts.FitNesse
 {
     public class DepositScript : Fixture
     {
+        public double Amount { get; set; }
         private readonly Account account;
 
         public DepositScript()
@@ -12,13 +13,14 @@ namespace Jukebox.IntegrationTests
             account = new Account(0);
         }
 
-        public double Amount { get; set; }
-        public int Credits { get; private set; }
+        public int Credits()
+        {
+            return account.Credits;
+        }
 
         public void Deposit()
         {
             account.Deposit(Amount);
-            Credits = account.Credits;
         }
     }
 }
